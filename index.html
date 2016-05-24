@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Page</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jcarousel.basic.css">
+    <link rel="stylesheet" href="css/custom-select.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/jcarousel.basic.js"></script>
+	<script src="js/jquery.customSelect.js"></script>
+	<script src="js/icheck.js"></script>
+	
+
+</head>
+<body>
+	<div class="container">
+		<h1>My page</h1>
+		
+		<select class="styled">
+			<option>one</option>
+			<option>two</option>
+			<option>something</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<script type="text/javascript">
+			$('select.styled').customSelect();
+		</script>
+		
+		<div class="checkbox-styled">
+              <input tabindex="1" type="checkbox" id="input-1">
+              <label for="input-1">Checkbox JQ</label>
+		</div>
+		<div class="checkbox-styled-css">
+			<input type="checkbox" name="checkbox" value="1" id="c1">
+			<label for="c1"><span></span>Checkbox CSS</label>
+		</div>
+		
+		<ul class='b-menu' id="menu1">
+			<li class='b-menu__item'><a href='#' class='b-menu__link'>Файл</a>
+				<ul class='b-submenu'>
+					<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Создать</a></li>
+					<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Открыть</a></li>
+					<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Сохранить</a></li>
+				</ul>
+			</li>
+			<li class='b-menu__item'><a href='#' class='b-menu__link'>Правка</a></li>
+			<li class='b-menu__item'><a href='#' class='b-menu__link'>Вид</a>
+				<ul class='b-submenu'>
+					<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Список</a></li>
+					<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Таблица</a></li>
+					<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Сортировать</a>
+						<ul class='b-submenu b-submenu_position_left'>
+							<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Имя</a></li>
+							<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Дата</a></li>
+							<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Тип</a></li>
+							<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Размер</a></li>
+						</ul>
+					</li>
+				</ul>	
+			</li>
+		</ul>
+		
+		<div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination"></p>
+        </div>
+
+	</div>
+	<script src="js/custom-checkbox.js"></script>
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/jquery.color-2.1.2.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script>
+		var m1 = new b_menu('#menu1');
+	</script>
+	
+	
+</body>
+</html>
